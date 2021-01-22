@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Root from "./root";
 import App from "./components/App";
 import "./index.css";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Root>
     <App />
-  </React.StrictMode>,
+  </Root>,
   document.getElementById("root")
 );
