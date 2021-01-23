@@ -1,0 +1,40 @@
+.wrapper {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  left: 15%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  margin: 0;
+  font-size: 22vmin;
+}
+
+.about {
+  color: #ffffff;
+}
+
+.works,
+.contact {
+  color: #ea0f1f;
+}
+
+.about,
+.works,
+.contact {
+  transition: padding-left 0.3s;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  letter-spacing: -5px;
+}
+
+.about:hover,
+.works:hover,
+.contact:hover {
+  padding-left: 40px;
+}

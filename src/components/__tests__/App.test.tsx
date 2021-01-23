@@ -6,7 +6,7 @@ import AboutPage from "../pages/AboutPage";
 import WorksPage from "../pages/WorksPage";
 import ContactPage from "../pages/ContactPage";
 
-let wrapped = null;
+let wrapped: any = null;
 
 beforeEach(() => {
   wrapped = shallow(<App />);
