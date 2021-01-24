@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 
 const { wrapper, header, about, works, contact } = styles;
 
+const setDefaultAbout = "about";
+const setDefaultWorks = "works";
+const setDefaultContact = "contact";
+
 const LandingLinks = () => {
   const [transformedText, setTransformedText] = useState({
     about: false,
@@ -12,13 +16,13 @@ const LandingLinks = () => {
   });
 
   const displayTransformedLink = (
-    directory: string,
+    directoryToDisplay: string,
     setDefaultOne: string,
     setDefaultTwo: string
   ) => {
     setTransformedText({
       ...transformedText,
-      [directory]: true,
+      [directoryToDisplay]: true,
       [setDefaultOne]: false,
       [setDefaultTwo]: false,
     });
@@ -35,10 +39,10 @@ const LandingLinks = () => {
           className={about}
           to="/about"
           onMouseEnter={() => {
-            displayTransformedLink("about", "works", "contact");
+            displayTransformedLink("about", setDefaultWorks, setDefaultContact);
           }}
           onMouseOut={() => {
-            hideTransformedLink("about");
+            hideTransformedLink(setDefaultAbout);
           }}
         >
           {transformedText.about ? "About" : "Hello."}
@@ -47,10 +51,10 @@ const LandingLinks = () => {
           className={works}
           to="/works"
           onMouseEnter={() => {
-            displayTransformedLink("works", "about", "contact");
+            displayTransformedLink("works", setDefaultAbout, setDefaultContact);
           }}
           onMouseOut={() => {
-            hideTransformedLink("works");
+            hideTransformedLink(setDefaultWorks);
           }}
         >
           {transformedText.works ? "Works" : "I am"}
@@ -59,10 +63,10 @@ const LandingLinks = () => {
           className={contact}
           to="/contact"
           onMouseEnter={() => {
-            displayTransformedLink("contact", "about", "works");
+            displayTransformedLink("contact", setDefaultAbout, setDefaultWorks);
           }}
           onMouseOut={() => {
-            hideTransformedLink("contact");
+            hideTransformedLink(setDefaultContact);
           }}
         >
           {transformedText.contact ? "Contact" : "Marek"}
