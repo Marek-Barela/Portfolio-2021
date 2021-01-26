@@ -1,15 +1,21 @@
-import React from "react";
+import React, { FC } from "react";
 import SectionWrapper from "../SectionWrapper";
 import SubpageContainer from "../SubpageContainer";
 import SubpageHeader from "../SubpageHeader";
+import { AboutHeader } from "../../lang/languageInterface";
 
-const AboutPage = () => {
+interface ParentProps {
+  aboutHeader: AboutHeader;
+}
+
+type Props = ParentProps;
+
+const AboutPage: FC<Props> = (props) => {
+  const { aboutHeader } = props;
   return (
     <SectionWrapper pageColor="#000000">
       <SubpageContainer>
-        <SubpageHeader fontColor="#FFFFFF">
-          I project & build digital products
-        </SubpageHeader>
+        <SubpageHeader fontColor="#FFFFFF">{aboutHeader.header}</SubpageHeader>
       </SubpageContainer>
     </SectionWrapper>
   );

@@ -21,19 +21,19 @@ const English: string = "EN";
 
 const App: FC<Props> = ({ actualLanguage }) => {
   const setLanguage =
-    actualLanguage === English
-      ? englishLanguage.englishMenu
-      : polishLanguage.polishMenu;
+    actualLanguage === English ? englishLanguage : polishLanguage;
+
+  const { menu, aboutHeader } = setLanguage;
 
   return (
     <>
       <LanguageSwitch />
       <Switch>
         <Route exact path="/">
-          <LandingPage menu={setLanguage} />
+          <LandingPage menu={menu} />
         </Route>
         <Route path="/about">
-          <AboutPage />
+          <AboutPage aboutHeader={aboutHeader} />
         </Route>
         <Route path="/works">
           <WorksPage />

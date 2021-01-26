@@ -6,3 +6,7 @@ export interface Menu {
   works: String;
   contact: String;
 }
+
+export interface AboutHeader {
+  header: String;
+}
