@@ -1,11 +1,16 @@
 import React from "react";
 import LandingContainer from "../LandingContainer";
 import LandingLinks from "../LandingLinks";
+import { Menu } from "../../lang/languageInterface";
 
-const LandingPage = () => {
+interface Props {
+  menu: Menu;
+}
+
+const LandingPage = (props: Props) => {
   return (
     <LandingContainer>
-      <LandingLinks />
+      <LandingLinks menu={props.menu} />
     </LandingContainer>
   );
 };

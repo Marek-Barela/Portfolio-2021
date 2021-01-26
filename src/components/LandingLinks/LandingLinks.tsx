@@ -1,14 +1,22 @@
 import React, { useState } from "react";
 import styles from "./LandingLinks.module.css";
 import { Link } from "react-router-dom";
+import { Menu } from "../../lang/languageInterface";
 
-const { wrapper, header, about, works, contact } = styles;
+interface Props {
+  menu: Menu;
+}
+
+const { wrapper, header, aboutStyle, worksStyle, contactStyle } = styles;
 
 const setDefaultAbout = "about";
 const setDefaultWorks = "works";
 const setDefaultContact = "contact";
 
-const LandingLinks = () => {
+const LandingLinks = (props: Props) => {
+  const { menu } = props;
+  const { hello, Iam, name, about, works, contact } = menu;
+
   const [transformedText, setTransformedText] = useState({
     about: false,
     works: false,
@@ -36,7 +44,7 @@ const LandingLinks = () => {
     <div className={wrapper}>
       <h1 className={header}>
         <Link
-          className={about}
+          className={aboutStyle}
           to="/about"
           onMouseEnter={() => {
             displayTransformedLink("about", setDefaultWorks, setDefaultContact);
@@ -45,10 +53,10 @@ const LandingLinks = () => {
             hideTransformedLink(setDefaultAbout);
           }}
         >
-          {transformedText.about ? "About" : "Hello."}
+          {transformedText.about ? about : hello}
         </Link>
         <Link
-          className={works}
+          className={worksStyle}
           to="/works"
           onMouseEnter={() => {
             displayTransformedLink("works", setDefaultAbout, setDefaultContact);
@@ -57,10 +65,10 @@ const LandingLinks = () => {
             hideTransformedLink(setDefaultWorks);
           }}
         >
-          {transformedText.works ? "Works" : "I am"}
+          {transformedText.works ? works : Iam}
         </Link>
         <Link
-          className={contact}
+          className={contactStyle}
           to="/contact"
           onMouseEnter={() => {
             displayTransformedLink("contact", setDefaultAbout, setDefaultWorks);
@@ -69,7 +77,7 @@ const LandingLinks = () => {
             hideTransformedLink(setDefaultContact);
           }}
         >
-          {transformedText.contact ? "Contact" : "Marek"}
+          {transformedText.contact ? contact : name}
         </Link>
       </h1>
     </div>

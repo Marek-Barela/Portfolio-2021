@@ -14,18 +14,18 @@
   font-size: 21vmin;
 }
 
-.about {
+.aboutStyle {
   color: #ffffff;
 }
 
-.works,
-.contact {
+.worksStyle,
+.contactStyle {
   color: #ea0f1f;
 }
 
-.about,
-.works,
-.contact {
+.aboutStyle,
+.worksStyle,
+.contactStyle {
   transition: padding-left 0.3s;
   padding: 0;
   margin: 0;
@@ -33,8 +33,8 @@
   letter-spacing: -5px;
 }
 
-.about:hover,
-.works:hover,
-.contact:hover {
+.aboutStyle:hover,
+.worksStyle:hover,
+.contactStyle:hover {
   padding-left: 40px;
 }
