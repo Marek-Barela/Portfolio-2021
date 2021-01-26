@@ -1,3 +1,8 @@
-const Action = {};
+import { SWITCH_LANGUAGE } from "./types";
 
-export default Action;
+export function switchLanguage(language: string) {
+  return {
+    type: SWITCH_LANGUAGE,
+    payload: language,
+  };
+}
