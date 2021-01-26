@@ -11,13 +11,15 @@ interface ParentProps {
 
 type Props = ParentProps;
 
+const white: string = "#FFFFFF";
+
 const AboutPage: FC<Props> = (props) => {
   const { aboutHeader } = props;
   return (
     <SectionWrapper pageColor="#000000">
-      <GoBackButton />
+      <GoBackButton fontColor={white} />
       <SubpageContainer>
-        <SubpageHeader fontColor="#FFFFFF">{aboutHeader.header}</SubpageHeader>
+        <SubpageHeader fontColor={white}>{aboutHeader.header}</SubpageHeader>
       </SubpageContainer>
     </SectionWrapper>
   );

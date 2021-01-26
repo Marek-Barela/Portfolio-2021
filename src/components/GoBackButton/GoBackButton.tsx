@@ -6,7 +6,14 @@ let history = createBrowserHistory();
 
 const { button } = styles;
 
-const GoBackButton = () => {
+interface ParentProps {
+  fontColor: string;
+}
+
+type Props = ParentProps;
+
+const GoBackButton = (props: Props) => {
+  const { fontColor } = props;
   const [textExtend, setTextExtend] = useState(false);
   const extendText = () => {
     setTextExtend(true);
@@ -22,6 +29,7 @@ const GoBackButton = () => {
       onMouseEnter={() => extendText()}
       onMouseOut={() => hideExtendedText()}
       onClick={() => history.goBack()}
+      style={{ color: fontColor }}
     >
       Marek.{textExtend ? "Back" : ""}
     </button>

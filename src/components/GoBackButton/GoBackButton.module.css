@@ -1,7 +1,7 @@
 .button {
   position: fixed;
   top: 40px;
-  right: 60px;
+  right: 40px;
   background-color: transparent;
   color: #ffffff;
   border: none;
@@ -9,10 +9,10 @@
   font-size: 2vmin;
   letter-spacing: 1px;
   height: 20px;
-  width: 50px;
-  transition: all 0.5s;
+  width: 62px;
+  transition: right 0.5s;
 }
 
 .button:hover {
-  right: 100px;
+  right: 60px;
 }
