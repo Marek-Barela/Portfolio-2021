@@ -1,15 +1,15 @@
-import React from "react";
-import { ReactNode } from "react-dom/node_modules/@types/react";
+import React, { FC, ReactNode } from "react";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import reducers from "./reducers";
 
 interface ReduxRoot {
-  children: ReactNode;
+  children?: ReactNode;
   initialState?: Object;
 }
 
-const root = ({ children, initialState = {} }: ReduxRoot) => {
+const root: FC<ReduxRoot> = (props: ReduxRoot) => {
+  const { initialState = {}, children } = props;
   const store = createStore(reducers, initialState);
 
   return (
