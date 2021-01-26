@@ -11,9 +11,9 @@ const { header } = styles;
 
 const SubpageHeader: FC<Props> = ({ children, fontColor }) => {
   return (
-    <h3 className={header} style={{ color: fontColor }}>
+    <h2 className={header} style={{ color: fontColor }}>
       {children}
-    </h3>
+    </h2>
   );
 };
 
