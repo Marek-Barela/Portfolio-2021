@@ -20,7 +20,7 @@
 
 .worksStyle,
 .contactStyle {
-  color: #ea0f1f;
+  color: rgb(var(--color-primary));
 }
 
 .aboutStyle,

@@ -14,5 +14,5 @@
 }
 
 .button:hover {
-  color: #ea0f1f;
+  color: rgb(var(--color-primary));
 }
