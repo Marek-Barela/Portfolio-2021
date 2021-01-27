@@ -6,7 +6,6 @@
 
 .wrapper {
   transition: padding-left 0.4s;
-  cursor: pointer;
 }
 
 .wrapper:hover {
