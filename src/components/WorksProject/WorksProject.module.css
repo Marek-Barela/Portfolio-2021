@@ -1,0 +1,18 @@
+.header {
+  font-size: 14vmin;
+  color: #ffffff;
+  margin: 0;
+}
+
+.wrapper {
+  transition: padding-left 0.4s;
+  cursor: pointer;
+}
+
+.wrapper:hover {
+  padding-left: 40px;
+}
+
+.wrapper a {
+  text-align: left;
+}
