@@ -12,3 +12,15 @@ export interface AboutContent {
   about: string;
   content: string[];
 }
+
+export interface WorksContent {
+  projects: WorksProject[];
+}
+
+export interface WorksProject {
+  id: string;
+  projectTitle: string;
+  projectDescription: string;
+  link: string;
+  content: string[];
+}
