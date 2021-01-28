@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
 import languageReducer from "./LanguageReducer";
+import projectsReducer from "./ProjectsReducer";
 
 const reducerMap = {
   languageReducer,
+  projectsReducer,
 };
 
 export type RootState = {

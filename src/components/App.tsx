@@ -10,16 +10,19 @@ import * as englishLanguage from "../lang/english";
 import { connect } from "react-redux";
 import { RootState } from "../reducers";
 import { getActualLanguage } from "../selectors/languageSelector";
+import { getProjects } from "../selectors/projectsSelector";
+import { Projects } from "../projects/projects";
 
 interface StateProps {
   actualLanguage?: string;
+  projectsList?: Projects[];
 }
 
 type Props = StateProps;
 
 const English: string = "EN";
 
-const App: FC<Props> = ({ actualLanguage }) => {
+const App: FC<Props> = ({ actualLanguage, projectsList = [] }) => {
   const setLanguage =
     actualLanguage === English ? englishLanguage : polishLanguage;
 
@@ -32,15 +35,25 @@ const App: FC<Props> = ({ actualLanguage }) => {
         <Route exact path="/">
           <LandingPage menu={menu} />
         </Route>
-        <Route path="/about">
+        <Route exact path="/about">
           <AboutPage aboutHeader={aboutHeader} />
         </Route>
-        <Route path="/works">
+        <Route exact path="/works">
           <WorksPage />
         </Route>
-        <Route path="/contact">
+        <Route exact path="/contact">
           <ContactPage />
         </Route>
+        {projectsList.map((project) => {
+          const { id, path, name, description } = project;
+          return (
+            <Route exact path={"/works" + path} key={id}>
+              <h3>{name}</h3>
+              <p>{description}</p>
+            </Route>
+          );
+        })}
+        <Route>Not Found</Route>
       </Switch>
     </>
   );
@@ -48,6 +61,7 @@ const App: FC<Props> = ({ actualLanguage }) => {
 
 const mapStateToProps = (state: RootState) => ({
   actualLanguage: getActualLanguage(state),
+  projectsList: getProjects(state),
 });
 
 export default connect(mapStateToProps, null)(App);
