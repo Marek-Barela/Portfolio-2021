@@ -2,12 +2,14 @@ import React, { FC } from "react";
 import SectionWrapper from "../SectionWrapper";
 import SubpageContainer from "../SubpageContainer";
 import SubpageHeader from "../SubpageHeader";
+import LanguageSwitch from "../LanguageSwitch";
 import GoBackButton from "../GoBackButton";
 import ArticleWrapper from "../ArticleWrapper";
 import ArticleHeader from "../ArticleHeader";
 import ImageContainer from "../ImageContainer";
 import ArticleParagraph from "../ArticleParagraph";
 import { AboutHeader } from "../../lang/languageInterface";
+import { white, black } from "../../utils/colors";
 
 interface ParentProps {
   aboutHeader: AboutHeader;
@@ -15,15 +17,14 @@ interface ParentProps {
 
 type Props = ParentProps;
 
-const white: string = "#FFFFFF";
-
 const AboutPage: FC<Props> = (props) => {
   const { aboutHeader } = props;
   return (
-    <SectionWrapper pageColor="#000000">
+    <SectionWrapper pageColor={black}>
+      <LanguageSwitch fontColor={white} />
       <GoBackButton fontColor={white} />
-      <SubpageContainer>
-        <SubpageHeader fontColor={white}>{aboutHeader.header}</SubpageHeader>
+      <SubpageContainer fontColor={white}>
+        <SubpageHeader>{aboutHeader.header}</SubpageHeader>
         <ImageContainer />
         <ArticleWrapper>
           <ArticleHeader>About</ArticleHeader>

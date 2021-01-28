@@ -4,7 +4,6 @@ import LandingPage from "./pages/LandingPage";
 import AboutPage from "./pages/AboutPage";
 import WorksPage from "./pages/WorksPage";
 import ContactPage from "./pages/ContactPage";
-import LanguageSwitch from "./LanguageSwitch";
 import SingleProject from "./SingleProject";
 import * as polishLanguage from "../lang/polish";
 import * as englishLanguage from "../lang/english";
@@ -31,7 +30,6 @@ const App: FC<Props> = ({ actualLanguage, projectsList = [] }) => {
 
   return (
     <>
-      <LanguageSwitch />
       <Switch>
         <Route exact path="/">
           <LandingPage menu={menu} />

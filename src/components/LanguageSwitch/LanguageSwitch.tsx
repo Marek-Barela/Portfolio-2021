@@ -7,20 +7,28 @@ import { getActualLanguage } from "../../selectors/languageSelector";
 
 const { button } = styles;
 
-interface stateProps {
+interface ParentProps {
+  fontColor: string;
+}
+
+interface StateProps {
   actualLanguage: string;
 }
 
-interface dispatchProps {
+interface DispatchProps {
   switchLanguage: (action: string) => void;
 }
 
-type Props = stateProps & dispatchProps;
+type Props = StateProps & DispatchProps & ParentProps;
 
 const PL: string = "PL";
 const EN: string = "EN";
 
-const LanguageSwitch: FC<Props> = ({ actualLanguage, switchLanguage }) => {
+const LanguageSwitch: FC<Props> = ({
+  actualLanguage,
+  switchLanguage,
+  fontColor,
+}) => {
   const [language, setLanguage] = useState(actualLanguage);
 
   const reverseLanguage = language === EN ? PL : EN;
@@ -34,7 +42,11 @@ const LanguageSwitch: FC<Props> = ({ actualLanguage, switchLanguage }) => {
     switchLanguage(reverseLanguage);
   };
   return (
-    <button className={button} onClick={() => changeLanguage()}>
+    <button
+      className={button}
+      onClick={() => changeLanguage()}
+      style={{ color: fontColor }}
+    >
       {reverseLanguage}
     </button>
   );

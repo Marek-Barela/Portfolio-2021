@@ -1,22 +1,21 @@
 import React from "react";
 import SectionWrapper from "../SectionWrapper";
 import GoBackButton from "../GoBackButton";
+import LanguageSwitch from "../LanguageSwitch";
 import SubpageContainer from "../SubpageContainer";
 import SubpageHeader from "../SubpageHeader";
 import ArticleWrapper from "../ArticleWrapper";
 import ArticleHeader from "../ArticleHeader";
 import ArticleParagraph from "../ArticleParagraph";
-
-const white: string = "#FFFFFF";
+import { white, black } from "../../utils/colors";
 
 const ContactPage = () => {
   return (
-    <SectionWrapper pageColor="#000000">
+    <SectionWrapper pageColor={black}>
+      <LanguageSwitch fontColor={white} />
       <GoBackButton fontColor={white} />
-      <SubpageContainer>
-        <SubpageHeader fontColor={white}>
-          Let's make something great!
-        </SubpageHeader>
+      <SubpageContainer fontColor={white}>
+        <SubpageHeader>Let's make something great!</SubpageHeader>
         <ArticleWrapper>
           <ArticleHeader>Contact</ArticleHeader>
           <ArticleParagraph>
