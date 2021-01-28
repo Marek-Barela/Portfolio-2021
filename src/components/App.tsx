@@ -5,6 +5,7 @@ import AboutPage from "./pages/AboutPage";
 import WorksPage from "./pages/WorksPage";
 import ContactPage from "./pages/ContactPage";
 import LanguageSwitch from "./LanguageSwitch";
+import SingleProject from "./SingleProject";
 import * as polishLanguage from "../lang/polish";
 import * as englishLanguage from "../lang/english";
 import { connect } from "react-redux";
@@ -45,11 +46,10 @@ const App: FC<Props> = ({ actualLanguage, projectsList = [] }) => {
           <ContactPage />
         </Route>
         {projectsList.map((project) => {
-          const { id, path, name, description } = project;
+          const { id, path } = project;
           return (
             <Route exact path={"/works" + path} key={id}>
-              <h3>{name}</h3>
-              <p>{description}</p>
+              <SingleProject {...project} />
             </Route>
           );
         })}
