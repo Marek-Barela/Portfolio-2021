@@ -23,7 +23,7 @@ const App: FC<Props> = ({ actualLanguage }) => {
   const setLanguage =
     actualLanguage === English ? englishLanguage : polishLanguage;
 
-  const { menu, aboutContent, worksContent } = setLanguage;
+  const { menu, aboutContent, worksContent, contactContent } = setLanguage;
 
   const { projects } = worksContent;
 
@@ -40,7 +40,7 @@ const App: FC<Props> = ({ actualLanguage }) => {
           <WorksPage worksContent={worksContent} />
         </Route>
         <Route exact path="/contact">
-          <ContactPage />
+          <ContactPage contactContent={contactContent} />
         </Route>
         {projects.map((project) => {
           const { id, link } = project;

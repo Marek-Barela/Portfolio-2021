@@ -24,3 +24,9 @@ export interface WorksProject {
   link: string;
   content: string[];
 }
+
+export interface ContactContent {
+  header: string;
+  contact: string;
+  content: string[];
+}
