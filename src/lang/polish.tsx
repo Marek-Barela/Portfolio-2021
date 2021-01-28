@@ -36,7 +36,7 @@ export const worksContent: WorksContent = {
       projectTitle: "Raccon Notes",
       projectDescription:
         "Aplikacja zaprojektowana do przechowywania i organizowania notatek",
-      link: "/works/simpler",
+      link: "/works/racconnotes",
       content: [
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iusto aperiam animi soluta, quam rem ea esse architecto eum vel.",
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil assumenda quisquam suscipit laboriosam doloremque soluta illum repudiandae in libero quas praesentium eligendi tempora sint, vel porro molestias, commodi quis officia.",
