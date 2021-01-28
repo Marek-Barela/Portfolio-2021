@@ -26,7 +26,7 @@ const App: FC<Props> = ({ actualLanguage, projectsList = [] }) => {
   const setLanguage =
     actualLanguage === English ? englishLanguage : polishLanguage;
 
-  const { menu, aboutHeader } = setLanguage;
+  const { menu, aboutContent } = setLanguage;
 
   return (
     <>
@@ -35,7 +35,7 @@ const App: FC<Props> = ({ actualLanguage, projectsList = [] }) => {
           <LandingPage menu={menu} />
         </Route>
         <Route exact path="/about">
-          <AboutPage aboutHeader={aboutHeader} />
+          <AboutPage aboutContent={aboutContent} />
         </Route>
         <Route exact path="/works">
           <WorksPage />

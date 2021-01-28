@@ -1,4 +1,4 @@
-import { Menu, AboutHeader } from "./languageInterface";
+import { Menu, AboutContent } from "./languageInterface";
 
 export const menu: Menu = {
   hello: "Witaj.",
@@ -9,6 +9,11 @@ export const menu: Menu = {
   contact: "Kontakt",
 };
 
-export const aboutHeader: AboutHeader = {
+export const aboutContent: AboutContent = {
   header: "Projektuje i buduje produkty cyfrowe",
+  about: "O mnie",
+  content: [
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sint nulla voluptate nemo temporibus consequuntur, maiores vero doloribus repellat eveniet sequi veniam omnis totam corporis. At, dolorum! Repellat, sapiente ut!",
+    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, eius.",
+  ],
 };

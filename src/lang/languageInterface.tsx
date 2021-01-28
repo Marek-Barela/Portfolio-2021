@@ -1,12 +1,14 @@
 export interface Menu {
-  hello: String;
-  Iam: String;
-  name: String;
-  about: String;
-  works: String;
-  contact: String;
+  hello: string;
+  Iam: string;
+  name: string;
+  about: string;
+  works: string;
+  contact: string;
 }
 
-export interface AboutHeader {
-  header: String;
+export interface AboutContent {
+  header: string;
+  about: string;
+  content: string[];
 }
