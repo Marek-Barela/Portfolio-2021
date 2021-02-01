@@ -18,7 +18,7 @@ export const aboutContent: AboutContent = {
   header: "Projektuje i buduje produkty cyfrowe",
   about: "O mnie",
   content: [
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sint nulla voluptate nemo temporibus consequuntur, maiores vero doloribus repellat eveniet sequi veniam omnis totam corporis. At, dolorum! Repellat, sapiente ut!",
+    "Cześć, nazywam się Marek. Jestem osobą, która dobrze rozumie technologie front-endowe, skupiam się na tworzeniu czystego i łatwego do utrzymania kodu. Szukam okazji, aby wnieść swój wkład w różne projekty i mieć możliwość współpracy z grupą świetnych ludzi, aby tworzyć niesamowite aplikacje.",
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, eius.",
   ],
 };

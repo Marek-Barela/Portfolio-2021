@@ -18,7 +18,7 @@ export const aboutContent: AboutContent = {
   header: "I project & build digital products",
   about: "About",
   content: [
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut exercitationem voluptas cumque facilis blanditiis vero veniam pariatur consectetur obcaecati aliquam!",
+    "I'm a web developer with a good understanding of front-end technologies focused on producing clean and maintainable code. I'm looking for opportunities to contribute my skills and collaborate with a group to create amazing applications.",
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, eius.",
   ],
 };
