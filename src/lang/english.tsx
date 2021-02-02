@@ -18,8 +18,10 @@ export const aboutContent: AboutContent = {
   header: "I project & build digital products",
   about: "About",
   content: [
-    "I'm a web developer with a good understanding of front-end technologies focused on producing clean and maintainable code. I'm looking for opportunities to contribute my skills and collaborate with a group to create amazing applications.",
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, eius.",
+    "Hey my name is Marek. I'm a web developer with a good understanding of front-end technologies focused on producing clean and maintainable code. I'm looking for opportunities to contribute my skills and collaborate with a group to create amazing products.",
+    "I feel very comfortable in React technology, I now how to create a huge number of functionalities, paying attention to the performance and architecture of a given solution. I follow the news all the time, so I don't lag behind when a new update comes out.",
+    "I only create practical projects, using the latest technological solutions, not only front-end, but also back-end.",
+    "The technologies I mainly use are React, Redux, Saga, TypeScript, Node.js, Express",
   ],
 };
 

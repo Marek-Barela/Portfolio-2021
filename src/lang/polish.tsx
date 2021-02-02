@@ -18,8 +18,10 @@ export const aboutContent: AboutContent = {
   header: "Projektuje i buduje produkty cyfrowe",
   about: "O mnie",
   content: [
-    "Cześć, nazywam się Marek. Jestem osobą, która dobrze rozumie technologie front-endowe, skupiam się na tworzeniu czystego i łatwego do utrzymania kodu. Szukam okazji, aby wnieść swój wkład w różne projekty i mieć możliwość współpracy z grupą świetnych ludzi, aby tworzyć niesamowite aplikacje.",
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, eius.",
+    "Cześć, nazywam się Marek. Jestem osobą, która dobrze rozumie technologie front-endowe. Skupiam się na tworzeniu czystego i łatwego do utrzymania kodu. Szukam okazji, aby wnieść swój wkład w rozwój projektów i mieć możliwość współpracy w fajnym zespole, aby tworzyć niesamowite produkty.",
+    "Bardzo swobodnie czuję się w technologii React, potrafię stworzyć ogromną liczbę funkcjonalności, zwracając przy tym dużą uwagę na wydajność oraz architekturę danego rozwiązania. Śledzę cały czas nowinki, dzięki czemu nie pozostaje w tyle, gdy wychodzi nowa aktualizacja.",
+    "Tworzę tylko praktyczne aplikacje, wykorzystując przy tym najnowsze rozwiązania technologiczne nie tylko front-endowe, ale i back-endowe.",
+    "Technologie, których głównie używam to React, Redux, Saga, TypeScript, Node.js, Express",
   ],
 };
 
