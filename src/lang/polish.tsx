@@ -55,8 +55,5 @@ export const worksContent: WorksContent = {
 export const contactContent: ContactContent = {
   header: "Zbudujmy razem coś wielkiego!",
   contact: "Kontakt",
-  content: [
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, sint nulla voluptate nemo temporibus consequuntur, maiores vero doloribus repellat eveniet sequi veniam omnis totam corporis. At, dolorum! Repellat, sapiente ut!",
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, eius.",
-  ],
+  content: ["Jeśli podobają ci się moje projekty i chciałbyś pracować z osobą asertywną o otwartym umyśle, napisz do mnie na jedną z poniższych platform."],
 };
