@@ -33,8 +33,8 @@ export const worksContent: WorksContent = {
       projectDescription: "Large application for managing tasks",
       link: "/works/simpler",
       content: [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iusto aperiam animi soluta, quam rem ea esse architecto eum vel.",
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil assumenda quisquam suscipit laboriosam doloremque soluta illum repudiandae in libero quas praesentium eligendi tempora sint, vel porro molestias, commodi quis officia.",
+        "Complex full stack application to manage projects and tasks. Application is based on popular application Todoist",
+        "Application was created with React, Redux, Redux-Saga, Typescript, Node.js, Express and MongoDB",
       ],
     },
     {
@@ -55,6 +55,14 @@ export const contactContent: ContactContent = {
   header: "Let's make something great!",
   contact: "Contact",
   content: [
-    "If you like my projects and would like to work with an open-minded assertive person, Feel free to reach out through any platforms bellow."
+    "If you like my projects and would like to work with an open-minded assertive person, Feel free to reach out through any platforms bellow.",
+  ],
+  externalLinks: [
+    { title: "marek.barela@wp.pl", link: "mailto:marek.barela@wp.pl" },
+    { title: "Github", link: "https://github.com/Marek-Barela" },
+    {
+      title: "Linkedin",
+      link: "https://www.linkedin.com/in/marek-bare%C5%82a/",
+    },
   ],
 };

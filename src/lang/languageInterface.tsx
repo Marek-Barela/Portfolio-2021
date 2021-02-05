@@ -29,4 +29,10 @@ export interface ContactContent {
   header: string;
   contact: string;
   content: string[];
+  externalLinks: ExternalLinks[];
+}
+
+export interface ExternalLinks {
+  title: string;
+  link: string;
 }

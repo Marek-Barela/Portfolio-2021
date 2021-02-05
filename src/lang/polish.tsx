@@ -55,5 +55,15 @@ export const worksContent: WorksContent = {
 export const contactContent: ContactContent = {
   header: "Zbudujmy razem coś wielkiego!",
   contact: "Kontakt",
-  content: ["Jeśli podobają ci się moje projekty i chciałbyś pracować z osobą asertywną o otwartym umyśle, napisz do mnie na jedną z poniższych platform."],
+  content: [
+    "Jeśli podobają ci się moje projekty i chciałbyś pracować z osobą asertywną o otwartym umyśle, skontaktuj się ze mną za pomocą poniższych linków.",
+  ],
+  externalLinks: [
+    { title: "marek.barela@wp.pl", link: "mailto:marek.barela@wp.pl" },
+    { title: "Github", link: "https://github.com/Marek-Barela" },
+    {
+      title: "Linkedin",
+      link: "https://www.linkedin.com/in/marek-bare%C5%82a/",
+    },
+  ],
 };

@@ -7,6 +7,7 @@ import SubpageHeader from "../SubpageHeader";
 import ArticleWrapper from "../ArticleWrapper";
 import ArticleHeader from "../ArticleHeader";
 import ArticleParagraph from "../ArticleParagraph";
+import ExternalLink from "../ExternalLink";
 import { white, black } from "../../utils/colors";
 import { ContactContent } from "../../lang/languageInterface";
 
@@ -17,7 +18,7 @@ interface ParentProps {
 type Props = ParentProps;
 
 const ContactPage: FC<Props> = ({ contactContent }) => {
-  const { header, contact, content } = contactContent;
+  const { header, contact, content, externalLinks } = contactContent;
   return (
     <SectionWrapper pageColor={black}>
       <LanguageSwitch fontColor={white} />
@@ -28,6 +29,10 @@ const ContactPage: FC<Props> = ({ contactContent }) => {
           <ArticleHeader>{contact}</ArticleHeader>
           {content.map((text, index) => {
             return <ArticleParagraph key={index}>{text}</ArticleParagraph>;
+          })}
+          {externalLinks.map((linkElement, index) => {
+            const { title, link } = linkElement;
+            return <ExternalLink key={index} title={title} link={link} />;
           })}
         </ArticleWrapper>
       </SubpageContainer>

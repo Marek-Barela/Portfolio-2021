@@ -1,0 +1,13 @@
+.linkStyle {
+  color: rgb(var(--color-primary));
+  font-weight: 600;
+  display: block;
+  text-align: left;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: padding-left 0.3s;
+}
+
+.linkStyle:hover {
+  padding-left: 20px;
+}
