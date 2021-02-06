@@ -41,7 +41,10 @@ export const worksContent: WorksContent = {
         "Application was created with React, Redux, Redux-Saga, Typescript, Node.js, Express and MongoDB",
       ],
       image: simpler,
-      externalLinks: [],
+      externalLinks: [
+        { title: "Github", link: "https://github.com/Marek-Barela/Simpler" },
+        { title: "Simpler", link: "https://simpler.herokuapp.com/" },
+      ],
     },
     {
       id: "2",
@@ -54,7 +57,13 @@ export const worksContent: WorksContent = {
         "Application was created as full stack application with technologies such as Node.js Express and MongoDB.",
       ],
       image: raccoon,
-      externalLinks: [],
+      externalLinks: [
+        {
+          title: "Github",
+          link: "https://github.com/Marek-Barela/Raccoon-notes",
+        },
+        { title: "Raccon Notes", link: "https://raccoon-notes.herokuapp.com/" },
+      ],
     },
     {
       id: "3",
@@ -67,7 +76,13 @@ export const worksContent: WorksContent = {
         "Mailbox was created only as a frontend application, therefore it does not contain an extensive backend. All changes in the app return to their default settings after refreshing.",
       ],
       image: mailbox,
-      externalLinks: [],
+      externalLinks: [
+        {
+          title: "Github",
+          link: "https://github.com/Marek-Barela/Mailbox",
+        },
+        { title: "Mailbox", link: "https://raccoon-notes.herokuapp.com/" },
+      ],
     },
   ],
 };
