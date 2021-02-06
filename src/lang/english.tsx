@@ -81,7 +81,10 @@ export const worksContent: WorksContent = {
           title: "Github",
           link: "https://github.com/Marek-Barela/Mailbox",
         },
-        { title: "Mailbox", link: "https://raccoon-notes.herokuapp.com/" },
+        {
+          title: "Mailbox",
+          link: "https://agitated-nobel-aff5f8.netlify.app/",
+        },
       ],
     },
   ],
