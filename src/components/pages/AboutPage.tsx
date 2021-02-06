@@ -6,7 +6,6 @@ import LanguageSwitch from "../LanguageSwitch";
 import GoBackButton from "../GoBackButton";
 import ArticleWrapper from "../ArticleWrapper";
 import ArticleHeader from "../ArticleHeader";
-import ImageContainer from "../ImageContainer";
 import ArticleParagraph from "../ArticleParagraph";
 import { AboutContent } from "../../lang/languageInterface";
 import { white, black } from "../../utils/colors";
@@ -25,7 +24,6 @@ const AboutPage: FC<Props> = ({ aboutContent }) => {
       <GoBackButton fontColor={white} />
       <SubpageContainer fontColor={white}>
         <SubpageHeader>{header}</SubpageHeader>
-        <ImageContainer />
         <ArticleWrapper>
           <ArticleHeader>{about}</ArticleHeader>
           {content.map((text, index) => {

@@ -17,6 +17,7 @@ const SingleProject: FC<Props> = ({
   projectTitle,
   projectDescription,
   content,
+  image,
 }) => {
   return (
     <SectionWrapper pageColor={white}>
@@ -24,7 +25,7 @@ const SingleProject: FC<Props> = ({
       <GoBackButton fontColor={black} />
       <SubpageContainer fontColor={black}>
         <SubpageHeader>{projectTitle}</SubpageHeader>
-        <ImageContainer />
+        <ImageContainer image={image} />
         <ArticleWrapper>
           <ArticleHeader>{projectDescription}</ArticleHeader>
           {content.map((text, index) => {

@@ -5,6 +5,10 @@ import {
   ContactContent,
 } from "./languageInterface";
 
+import simpler from "../assets/images/simpler.png";
+import raccoon from "../assets/images/raccoon.png";
+import mailbox from "../assets/images/mailbox.png";
+
 export const menu: Menu = {
   hello: "Witaj.",
   Iam: "Jestem",
@@ -31,12 +35,13 @@ export const worksContent: WorksContent = {
       id: "1",
       projectTitle: "Simpler",
       projectDescription:
-        "Rozbudowana aplikacja do zarządzania zadaniami do wykonania i organizacją czasu.",
+        "Aplikacja do zarządzania zadaniami do wykonania i organizacją czasu.",
       link: "/works/simpler",
       content: [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iusto aperiam animi soluta, quam rem ea esse architecto eum vel.",
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil assumenda quisquam suscipit laboriosam doloremque soluta illum repudiandae in libero quas praesentium eligendi tempora sint, vel porro molestias, commodi quis officia.",
+        "Złożona aplikacja do zarządzania projektami i zadaniami. Aplikacja oparta jest na popularnej aplikacji Todoist",
+        "Wykorzystane technologie React, Redux, Redux-Saga, Typescript, Node.js, Express i MongoDB.",
       ],
+      image: simpler,
     },
     {
       id: "2",
@@ -45,9 +50,22 @@ export const worksContent: WorksContent = {
         "Aplikacja zaprojektowana do przechowywania i organizowania notatek",
       link: "/works/racconnotes",
       content: [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iusto aperiam animi soluta, quam rem ea esse architecto eum vel.",
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil assumenda quisquam suscipit laboriosam doloremque soluta illum repudiandae in libero quas praesentium eligendi tempora sint, vel porro molestias, commodi quis officia.",
+        "Raccoon to świetna aplikacja do zarządzania notatkami z funkcjonalnością edytora tekstu",
+        "Aplikacja została stworzona przy użycu technologii takich jak Node.js Express i MongoDB.",
       ],
+      image: raccoon,
+    },
+    {
+      id: "3",
+      projectTitle: "Mailbox",
+      projectDescription:
+        "Rozbudowana funkcjonalność aplikacji pocztowej po stronie klienta",
+      link: "/works/mailbox",
+      content: [
+        "Aplikacja stworzona na podobieństwo poczty elektronicznej posiada bogatą ilość operacji takie jak sortowanie, przenoszenie zaznaczonych wiadomości, tworzenie nowych folderów, oznaczanie wiadomości jako przeczytane i nieprzeczytane itd.",
+        "Mailbox został stworzony tylko jako aplikacja frontendowa, przez co nie posiada rozbudowanego backendu. Wszystkie zmiany w aplikacji wracają do ustawień domyślnych po odświeżeniu.",
+      ],
+      image: mailbox,
     },
   ],
 };

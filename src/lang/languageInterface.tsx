@@ -23,6 +23,7 @@ export interface WorksProject {
   projectDescription: string;
   link: string;
   content: string[];
+  image: string;
 }
 
 export interface ContactContent {

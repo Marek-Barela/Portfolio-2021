@@ -5,6 +5,10 @@ import {
   ContactContent,
 } from "./languageInterface";
 
+import simpler from "../assets/images/simpler.png";
+import raccoon from "../assets/images/raccoon.png";
+import mailbox from "../assets/images/mailbox.png";
+
 export const menu: Menu = {
   hello: "Hello.",
   Iam: "I am",
@@ -30,12 +34,13 @@ export const worksContent: WorksContent = {
     {
       id: "1",
       projectTitle: "Simpler",
-      projectDescription: "Large application for managing tasks",
+      projectDescription: "Practical application for managing tasks",
       link: "/works/simpler",
       content: [
         "Complex full stack application to manage projects and tasks. Application is based on popular application Todoist",
         "Application was created with React, Redux, Redux-Saga, Typescript, Node.js, Express and MongoDB",
       ],
+      image: simpler,
     },
     {
       id: "2",
@@ -44,9 +49,22 @@ export const worksContent: WorksContent = {
         "An application designed to store and organize your notes",
       link: "/works/racconnotes",
       content: [
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora iusto aperiam animi soluta, quam rem ea esse architecto eum vel.",
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil assumenda quisquam suscipit laboriosam doloremque soluta illum repudiandae in libero quas praesentium eligendi tempora sint, vel porro molestias, commodi quis officia.",
+        "Raccoon is a great application for managing notes with text editor functionality.",
+        "Application was created as full stack application with technologies such as Node.js Express and MongoDB.",
       ],
+      image: raccoon,
+    },
+    {
+      id: "3",
+      projectTitle: "Mailbox",
+      projectDescription:
+        "Complex client side functionality of email application",
+      link: "/works/mailbox",
+      content: [
+        "The application created to resemble of email functionality. It contain rich amount of features such as sorting, moving messages, new folders creating, marking messages as read and unread etc.",
+        "Mailbox was created only as a frontend application, therefore it does not contain an extensive backend. All changes in the app return to their default settings after refreshing.",
+      ],
+      image: mailbox,
     },
   ],
 };

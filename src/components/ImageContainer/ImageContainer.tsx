@@ -1,10 +1,18 @@
-import React from "react";
+import React, { FC } from "react";
 import styles from "./ImageContainer.module.css";
 
-const { container } = styles;
+const { container, img } = styles;
 
-const ImageContainer = () => {
-  return <div className={container}></div>;
+interface Image {
+  image: string;
+}
+
+const ImageContainer: FC<Image> = ({ image }) => {
+  return (
+    <div className={container}>
+      <img className={img} src={image} alt="Project" />
+    </div>
+  );
 };
 
 export default ImageContainer;
