@@ -42,6 +42,10 @@ export const worksContent: WorksContent = {
         "Wykorzystane technologie React, Redux, Redux-Saga, Typescript, Node.js, Express i MongoDB.",
       ],
       image: simpler,
+      externalLinks: [
+        { title: "Github", link: "https://github.com/Marek-Barela/Simpler" },
+        { title: "Simpler", link: "https://simpler.herokuapp.com/" },
+      ],
     },
     {
       id: "2",
@@ -54,6 +58,13 @@ export const worksContent: WorksContent = {
         "Aplikacja została stworzona przy użycu technologii takich jak Node.js Express i MongoDB.",
       ],
       image: raccoon,
+      externalLinks: [
+        {
+          title: "Github",
+          link: "https://github.com/Marek-Barela/Raccoon-notes",
+        },
+        { title: "Raccon Notes", link: "https://raccoon-notes.herokuapp.com/" },
+      ],
     },
     {
       id: "3",
@@ -66,6 +77,13 @@ export const worksContent: WorksContent = {
         "Mailbox został stworzony tylko jako aplikacja frontendowa, przez co nie posiada rozbudowanego backendu. Wszystkie zmiany w aplikacji wracają do ustawień domyślnych po odświeżeniu.",
       ],
       image: mailbox,
+      externalLinks: [
+        {
+          title: "Github",
+          link: "https://github.com/Marek-Barela/Mailbox",
+        },
+        { title: "Mailbox", link: "https://raccoon-notes.herokuapp.com/" },
+      ],
     },
   ],
 };

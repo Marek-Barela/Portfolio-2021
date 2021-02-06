@@ -8,6 +8,7 @@ import SubpageHeader from "../SubpageHeader";
 import ArticleWrapper from "../ArticleWrapper";
 import ArticleHeader from "../ArticleHeader";
 import ArticleParagraph from "../ArticleParagraph";
+import ExternalLink from "../ExternalLink";
 import { WorksProject } from "../../lang/languageInterface";
 import { white, black } from "../../utils/colors";
 
@@ -18,6 +19,7 @@ const SingleProject: FC<Props> = ({
   projectDescription,
   content,
   image,
+  externalLinks,
 }) => {
   return (
     <SectionWrapper pageColor={white}>
@@ -30,6 +32,10 @@ const SingleProject: FC<Props> = ({
           <ArticleHeader>{projectDescription}</ArticleHeader>
           {content.map((text, index) => {
             return <ArticleParagraph key={index}>{text}</ArticleParagraph>;
+          })}
+          {externalLinks.map((externalLink, index) => {
+            const { title, link } = externalLink;
+            return <ExternalLink key={index} title={title} link={link} />;
           })}
         </ArticleWrapper>
       </SubpageContainer>

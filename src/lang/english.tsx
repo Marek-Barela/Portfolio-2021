@@ -41,6 +41,7 @@ export const worksContent: WorksContent = {
         "Application was created with React, Redux, Redux-Saga, Typescript, Node.js, Express and MongoDB",
       ],
       image: simpler,
+      externalLinks: [],
     },
     {
       id: "2",
@@ -53,6 +54,7 @@ export const worksContent: WorksContent = {
         "Application was created as full stack application with technologies such as Node.js Express and MongoDB.",
       ],
       image: raccoon,
+      externalLinks: [],
     },
     {
       id: "3",
@@ -65,6 +67,7 @@ export const worksContent: WorksContent = {
         "Mailbox was created only as a frontend application, therefore it does not contain an extensive backend. All changes in the app return to their default settings after refreshing.",
       ],
       image: mailbox,
+      externalLinks: [],
     },
   ],
 };

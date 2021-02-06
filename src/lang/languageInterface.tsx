@@ -24,6 +24,7 @@ export interface WorksProject {
   link: string;
   content: string[];
   image: string;
+  externalLinks: ExternalLinks[];
 }
 
 export interface ContactContent {
