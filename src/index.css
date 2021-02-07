@@ -32,6 +32,10 @@ a {
   min-width: 200px;
 }
 
+html {
+  min-width: 360px;
+}
+
 body {
   margin: 0;
   color: #333333;
@@ -39,6 +43,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  min-width: 360px;
 }
 
 code {
