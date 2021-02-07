@@ -32,10 +32,6 @@ a {
   min-width: 200px;
 }
 
-html {
-  min-width: 360px;
-}
-
 body {
   margin: 0;
   color: #333333;
