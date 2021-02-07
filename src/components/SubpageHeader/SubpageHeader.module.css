@@ -1,5 +1,12 @@
 .header {
-  font-size: 4.7em;
-  margin: 0;
+  font-size: 3.7em;
+  margin: 0 0 0 60px;
   width: 80%;
+}
+
+@media (min-width: 700px) {
+  .header {
+    font-size: 4.7em;
+    margin: 0;
+  }
 }
