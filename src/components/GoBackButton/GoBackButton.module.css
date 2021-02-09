@@ -1,11 +1,11 @@
 .button {
   position: fixed;
-  top: 40px;
-  right: 40px;
+  top: 8%;
+  right: 5%;
   background-color: transparent;
   border: none;
   font-weight: 600;
-  font-size: 2vmin;
+  font-size: 13px;
   letter-spacing: 1px;
   height: 20px;
   width: 62px;
@@ -13,5 +13,5 @@
 }
 
 .button:hover {
-  right: 60px;
+  right: 7%;
 }
