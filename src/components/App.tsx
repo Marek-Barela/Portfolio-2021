@@ -29,7 +29,7 @@ const App: FC<Props> = ({ actualLanguage }) => {
   const { projects } = worksContent;
 
   return (
-    <>
+    <main>
       <Switch>
         <Route exact path="/">
           <LandingPage menu={menu} />
@@ -55,7 +55,7 @@ const App: FC<Props> = ({ actualLanguage }) => {
           <NotFoundPage />
         </Route>
       </Switch>
-    </>
+    </main>
   );
 };
 
