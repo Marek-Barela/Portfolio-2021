@@ -1,4 +1,16 @@
 .header {
-  font-size: 40px;
+  font-size: 26px;
   margin-top: 80px;
+}
+
+@media (min-width: 700px) {
+  .header {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    font-size: 40px;
+  }
 }
