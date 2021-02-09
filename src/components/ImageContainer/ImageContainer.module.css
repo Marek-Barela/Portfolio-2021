@@ -1,12 +1,13 @@
 .container {
   padding: 0;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
 }
 
 .img {
-  max-width: 100%;
+  max-width: 70%;
   border: 1px solid #dddddd;
-  border-radius: 20px;
 }
 
 @media (min-width: 700px) {
