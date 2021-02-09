@@ -6,7 +6,7 @@
 
 .wrapper {
   transition: padding-left 0.4s;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 .wrapper:hover {
@@ -20,6 +20,10 @@
 @media (min-width: 500px) {
   .header {
     font-size: 14vmin;
+  }
+
+  .wrapper {
+    margin-left: 50px;
   }
 }
 
