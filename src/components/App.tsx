@@ -5,6 +5,7 @@ import AboutPage from "./pages/AboutPage";
 import WorksPage from "./pages/WorksPage";
 import ContactPage from "./pages/ContactPage";
 import SingleProject from "./SingleProject";
+import NotFoundPage from "./pages/NotFound";
 import * as polishLanguage from "../lang/polish";
 import * as englishLanguage from "../lang/english";
 import { connect } from "react-redux";
@@ -50,7 +51,9 @@ const App: FC<Props> = ({ actualLanguage }) => {
             </Route>
           );
         })}
-        <Route>Not Found</Route>
+        <Route>
+          <NotFoundPage />
+        </Route>
       </Switch>
     </>
   );
