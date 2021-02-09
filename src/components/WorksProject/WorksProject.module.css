@@ -1,11 +1,12 @@
 .header {
-  font-size: 14vmin;
+  font-size: 10vmin;
   color: #ffffff;
   margin: 0;
 }
 
 .wrapper {
   transition: padding-left 0.4s;
+  margin-left: 50px;
 }
 
 .wrapper:hover {
@@ -14,4 +15,16 @@
 
 .wrapper a {
   text-align: left;
+}
+
+@media (min-width: 500px) {
+  .header {
+    font-size: 14vmin;
+  }
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    margin-left: 0;
+  }
 }
