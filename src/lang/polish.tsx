@@ -9,6 +9,7 @@ import simpler from "../assets/images/simpler.png";
 import raccoon from "../assets/images/raccoon.png";
 import mailbox from "../assets/images/mailbox.png";
 import currencyConverter from "../assets/images/currencyconverter.png";
+import slick from "../assets/images/slick.png";
 
 export const menu: Menu = {
   hello: "Witaj.",
@@ -110,6 +111,24 @@ export const worksContent: WorksContent = {
         {
           title: "Currency Converter",
           link: "https://hardcore-leakey-952fc7.netlify.com/",
+        },
+      ],
+    },
+    {
+      id: "5",
+      projectTitle: "Slick",
+      projectDescription: "Szablon aplikacji webowej",
+      link: "/works/slick",
+      content: ["Aplikacja z bardzo ładnym designem stworzona w Reacie."],
+      image: slick,
+      externalLinks: [
+        {
+          title: "Github",
+          link: "https://github.com/Marek-Barela/Slick-React",
+        },
+        {
+          title: "Slick",
+          link: "https://determined-mccarthy-d890e0.netlify.app/",
         },
       ],
     },
