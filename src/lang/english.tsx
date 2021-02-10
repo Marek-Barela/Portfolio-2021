@@ -8,6 +8,7 @@ import {
 import simpler from "../assets/images/simpler.png";
 import raccoon from "../assets/images/raccoon.png";
 import mailbox from "../assets/images/mailbox.png";
+import currencyConverter from "../assets/images/currencyconverter.png";
 
 export const menu: Menu = {
   hello: "Hello.",
@@ -84,6 +85,30 @@ export const worksContent: WorksContent = {
         {
           title: "Mailbox",
           link: "https://agitated-nobel-aff5f8.netlify.app/",
+        },
+      ],
+    },
+    {
+      id: "4",
+      projectTitle: "Currency Converter",
+      projectDescription:
+        "Currency conversion and historical data for 33 different currencies.",
+      link: "/works/currency-converter",
+      content: [
+        "Application created as trial for very extended project setup",
+        "The converter contains a very rich and scalable project structure with the use of many libraries",
+        "The aim of the project was to create an application with a persist state after reloading, conversion for specific currency and historical rates with graph",
+        "Used technology: React, Redux, Redux-Saga, Typescript, Typesafe-Actions, CSS Modules, Ramda, Axios",
+      ],
+      image: currencyConverter,
+      externalLinks: [
+        {
+          title: "Github",
+          link: "https://github.com/Marek-Barela/Currency-Converter",
+        },
+        {
+          title: "Currency Converter",
+          link: "https://hardcore-leakey-952fc7.netlify.com/",
         },
       ],
     },
